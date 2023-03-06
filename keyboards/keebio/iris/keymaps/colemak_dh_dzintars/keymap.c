@@ -40,9 +40,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
      KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,                              KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,
   //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-     KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,                              KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_DEL,
+     KC_NO,   KC_NO,   RGB_HUI, RGB_SAI, RGB_VAI, RGB_MOD,                            KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_DEL,
   //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-     KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,                              KC_NO,   KC_MINS, KC_EQL,  KC_LBRC, KC_RBRC, KC_BSPC,
+     KC_NO,   KC_NO,   RGB_HUD, RGB_SAD, RGB_VAD, RGB_TOG,                            KC_NO,   KC_MINS, KC_EQL,  KC_LBRC, KC_RBRC, KC_BSPC,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐        ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
      KC_LSFT, KC_UNDO, KC_CUT,  KC_COPY, KC_PSTE, KC_NO,   KC_NO,            KC_RGUI, KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_BSLS, KC_NO,
   //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┴───┬────┘        └───┬────┴───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
