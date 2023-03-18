@@ -11,6 +11,18 @@ enum layers {
 // KEYCODE DEFINITIONS
 #define CTL_ESC MT(MOD_LCTL, KC_ESC)
 
+// Left-hand home row mods
+#define GUI_A LGUI_T(KC_A)
+#define ALT_R LALT_T(KC_R)
+#define SFT_S LSFT_T(KC_S)
+#define CTLL_T LCTL_T(KC_T)
+
+// Right-hand home row mods
+#define CTL_N RCTL_T(KC_N)
+#define SFT_E RSFT_T(KC_E)
+#define ALT_I LALT_T(KC_I)
+#define GUI_O RGUI_T(KC_O)
+
 enum custom_keycodes {
   SIGNAL = SAFE_RANGE,
   L0,
@@ -28,7 +40,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
      KC_TAB,  KC_Q,    KC_W,    KC_F,    KC_P,    KC_B,                               KC_J,    KC_L,    KC_U,    KC_Y,    KC_SCLN, KC_QUOT,
   //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-     CTL_ESC, KC_A,    KC_R,    KC_S,    KC_T,    KC_G,                               KC_M,    KC_N,    KC_E,    KC_I,    KC_O,    CTL_ESC,
+     CTL_ESC, GUI_A,   ALT_R,   SFT_S,   CTLL_T,  KC_G,                               KC_M,    CTL_N,   SFT_E,   ALT_I,   GUI_O,   CTL_ESC,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐        ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
      KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_D,    KC_V,    KC_APP,           KC_RALT, KC_K,    KC_H,    KC_COMM, KC_DOT,  KC_SLSH, KC_RSFT,
   //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┴───┬────┘        └───┬────┴───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
